@@ -1,0 +1,147 @@
+//============================================================================
+// Name        : CSC450_CT1.cpp
+// Author      : Josephine Huynh
+// Description : Create a simple application display information of a fictional person
+//============================================================================
+
+#include <iostream>
+
+// Standard namespace declaration
+using namespace std;
+
+// Main Function
+int main() {
+
+// Define variables for the information
+    string firstName = "Elf";
+    string lastName = "Santa";
+    string address = "1224 Christmas Street";
+    string city = "North Pole";
+    string zipCode = "99705";
+
+// Print out the information
+    cout<<"First Name:"<<firstName<< endl;
+    cout<<"Last Name:"<<lastName<< endl;
+    cout<<"Address:"<<address<< endl;
+    cout<<"City:"<<city<< endl;
+    cout<<"Zip Code:"<<zipCode<< endl;
+    return 0;
+}
+
+
+
+//============================================================================
+// Name        : CSC450_CT1_mod1-1.cpp
+// Author      : Josephine Huynh
+// Description : Correct errors in the provided program
+//============================================================================
+
+
+/*
+THE ORIGINAL VERSION
+
+#include<iostream>
+#include<conio.h>
+
+// Standard namespace declaration
+using namespace std;
+
+Main Function
+int main()
+{
+
+     //Standard Ouput Statement
+     cout<<"Welcome to this C++ Program"<<endl;
+
+     cout<<I have corrected all errors for this program. <<endl;
+
+     // Wait For Output Screen
+
+     //Main Function return Statement
+
+}
+*/
+
+
+
+//CORRECTED VERSION
+
+#include <iostream>
+// Standard namespace declaration
+using namespace std;
+// Main Function
+int main()
+{
+    // Standard Output Statement
+    cout<<"Welcome to this C++ Program"<<endl;
+    cout<<"I have corrected all errors for this program."<<endl; // Missing ""
+
+    // Wait For Output Screen
+    cin.get();
+
+    // Main Function return Statement
+    return 0;
+}
+
+
+
+
+
+
+//============================================================================
+// Name        : CSC450_CT1_mod1-2.cpp
+// Author      : Josephine Huynh
+// Description : Correct errors in the provided program
+//============================================================================
+
+/* THE ORIGINAL VERSION
+#include<iostream>
+#include<conio.h>
+
+// Standard namespace declaration
+using namespace std;
+
+// Main Function
+int main()
+{
+    double myMoney = 1000.50;  // this should be printed out
+
+    // Standard Output Statement
+    cout"Please be sure to correct all syntax errors in this program"<<endl;
+
+    cout<<"I have corrected all errors for this program. <<endl;
+
+    cout<<" The total amount of money available is = "<<   <<endl;
+
+    // Wait For Output Screen
+
+    // Main Function return Statement
+    return 0;
+}
+
+*/
+
+//CORRECTED VERSION
+#include <iostream>
+
+// Standard namespace declaration
+using namespace std;
+
+// Main Function
+int main()
+{
+    double myMoney = 1000.50;  // this should be printed out
+
+    // Standard Output Statement
+    cout<<"Please be sure to correct all syntax errors in this program"<< endl; // Missing <<
+
+    cout<<"I have corrected all errors for this program."<< endl; // Missing ""
+
+    cout<<"The total amount of money available is = "<< myMoney<< endl; // Missing variable to output
+
+    // Wait For Output Screen
+    cin.get();
+
+    // Main Function return Statement
+    return 0;
+}
